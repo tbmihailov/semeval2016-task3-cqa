@@ -45,13 +45,13 @@ Please, cite the following paper if you use the resources below:
 | Baseline | 59.53 | - | 
 
 
-*Table:Exploring Word2Vec training parameters on Qatar Living Forum:* word vector size (Size), context window (Window), minimum word frequency (Freq), and skip-grams (Skip).
+**Table:Exploring Word2Vec training parameters on Qatar Living Forum:** word vector size (Size), context window (Window), minimum word frequency (Freq), and skip-grams (Skip).
 Vectors used as features for subtask A (together with all other features):
 training on train2016-part1, testing on test2016:
 
 | Size  |  Window  |  Freq  |  Skip | MAP | Acc | Word embeddings |
 | --- | --- | --- |  --- | --- | --- | --- |
-| 200 |   5 |   1 |   3  |  **78.21** | 74.25 | [Download]() |
+| 200 |   5 |   1 |   3  |  **78.21** | 74.25 | [Download]()  - best performing for Subtask A with ablated features(see table below)|
 | 200 |   5 |   5 |   1 | 78.19 | 73.49 | [Download]() |
 | 200 |   5 |   5 |   3 | 78.13 | 74.01 | [Download]() |
 | 200 |   5 |   1 |   1 | 78.01  |  74.53 | [Download]() |
@@ -66,7 +66,7 @@ training on train2016-part1, testing on test2016:
 | 100 |   10 |   5 |   1 | 77.08  |  **74.53** | [Download]() |
 
 
-*Table: Subtask C. Using all features without some feature groups.* Word2Vec is trained on QL with word vector size 100, context window 5, minimum word frequency 1, and skip-grams 1 [Download](), Classifier is trained on Train2016-part1 and evaluated on Test-2016:
+**Table: Subtask C. Using all features without some feature groups.** Word2Vec is trained on QL with word vector size 100, context window 5, minimum word frequency 1, and skip-grams 1 [Download](), Classifier is trained on Train2016-part1 and evaluated on Test-2016:
 
 | Features | MAP | Accuracy |
 | --- | --- | --- |
@@ -91,4 +91,29 @@ training on train2016-part1, testing on test2016:
 | Contrastive 2 | 48.76 | 69.71 |
 | Baseline (IR) | 28.88 | -- |
 
+**Table:Subtask A. Using all features without some feature groups.**
+Word2Vec is trained with word vector size 200, context window 5, minimum word frequency 1, and skip-grams 3([Download]()). Classifier is trained on Train2016-part1 and evaluated on Test-2016:
+
+| Features | MAP  | Accuracy |
+| --- | --- | --- |
+| All  -  Quest. to Comment sim | **78.52** | 74.31 |
+| All  -  Maximized similarity       | 78.38 | 74.59 |
+| All  -  Word Clusters similarity   | 78.29 | 74.25 |
+| All  -  WC sim \& Meta cat        | 78.22 | 74.04 |
+| All  -  Meta categories            | 78.21 | 74.25 |
+| All                                | 78.21 | 74.25 |
+| All  -  Meta cat \& LDA sim           | 78.18 | 73.88 |
+| All  -  Ext POS sim \& WC sim     | 78.10 | 74.28 |
+| All  -  Aligned similarity         | 77.97 | 74.16 |
+| All  -  Cat \& WC \& LDA sim | 77.95 | 74.19 |
+| All  -  WC \& LDA sims         | 77.92 | 74.25 |
+| All  -  Ext POS sim                | 77.92 | 74.43 |
+| All  -  LDA sim                    | 77.85 | 74.37 |
+| All  -  POS sim                    | 77.77 | **74.80** |
+| All  -  Metadata full              | 74.50 | 70.31 |
+| All  -  Word Vectors               | 74.35 | 70.80 |
+| Primary                            | 77.58 | 73.39 |
+| Contrastive 1                      | 77.16 | 73.88 |
+| Contrastive 2                      | 75.41 | 72.26 |
+| Baseline (IR)  | 59.53 | --  |
 
