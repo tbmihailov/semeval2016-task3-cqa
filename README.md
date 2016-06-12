@@ -7,7 +7,7 @@ Official page - [http://alt.qcri.org/semeval2016/task3/](http://alt.qcri.org/sem
 Description paper and results - [pdf](http://alt.qcri.org/semeval2016/task3/data/uploads/semeval2016-task3-report.pdf)
 
 ##SemanticZ at SemEval-2016 Task 3: Ranking Relevant Answers in Community Question Answering Using Semantic Similarity Based on Fine-tuned Word Embeddings
-We publish word2vec word embeddings trained on Qatar Living([qatarliving.com](http://qatarliving.com) questions and answers as used in our system for finding good answers in a community forum, as defined in SemEval-2016, Task 3 on Community Question Answering. Our approach relies on several semantic similarity features based on fine-tuned word embeddings and topics similarities. In the main Subtask C, our primary submission was ranked third, with a MAP of 51.68 and accuracy of 69.94. In Subtask A, our primary submission was also third, with MAP of 77.58 and accuracy of 73.39.
+We publish word2vec word embeddings trained on Qatar Living([qatarliving.com](http://qatarliving.com)) questions and answers as used in our system for finding good answers in a community forum, as defined in SemEval-2016, Task 3 on Community Question Answering. Our approach relies on several semantic similarity features based on fine-tuned word embeddings and topics similarities. In the main Subtask C, our primary submission was ranked third, with a MAP of 51.68 and accuracy of 69.94. In Subtask A, our primary submission was also third, with MAP of 77.58 and accuracy of 73.39.
 
 System description paper:[pdf]()
 
