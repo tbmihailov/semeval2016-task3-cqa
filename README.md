@@ -1,6 +1,11 @@
-# Resources used in Semanticz System in the SemEval 2016 Task 3 Community Question Answering
-Resources for the Semeval 2016 Task 3 Community Question Answering. Contains word embeddings and system description results
+# Fine-Tuned word embeddings trained on the Community Question Answering data of QatarLiving.com forum as used in Semanticz System in the SemEval 2016 Task 3 Community Question Answering
+Here we publish our fine-tuned domain specific word embeddings suitable for Community Question Answering in the Qatar Living Forum as used for SemanticZ system participation in Semeval 2016 Task 3 Community Question Answering.
+
 ## SemEval 2016 Task 3 Community Question Answering
+Official page - [http://alt.qcri.org/semeval2016/task3/](http://alt.qcri.org/semeval2016/task3/)
+
+Description paper and results - [pdf](http://alt.qcri.org/semeval2016/task3/data/uploads/semeval2016-task3-report.pdf)
+
 ##SemanticZ at SemEval-2016 Task 3: Ranking Relevant Answers in Community Question Answering Using Semantic Similarity Based on Fine-tuned Word Embeddings
 We publish word2vec word embeddings trained on Qatar Living([qatarliving.com](http://qatarliving.com) questions and answers as used in our system for finding good answers in a community forum, as defined in SemEval-2016, Task 3 on Community Question Answering. Our approach relies on several semantic similarity features based on fine-tuned word embeddings and topics similarities. In the main Subtask C, our primary submission was ranked third, with a MAP of 51.68 and accuracy of 69.94. In Subtask A, our primary submission was also third, with MAP of 77.58 and accuracy of 73.39.
 
@@ -25,7 +30,7 @@ Please, cite the following paper if you use the resources below:
 
 **Table:Semantic vectors of different vector sizes + cossim(vec(Q),vec(A)), trained on Qatar Living Forum as features for subtask A:** training on train2016-part1, testing on test2016:
 
-| Vector size | MAP | Accuracy | - |
+| Vector size | MAP | Accuracy | Word embeddings |
 | --- | --- | --- | --- |
 | 800 | **78.45** | 74.22 | [Download]() | 
 | 700 | 78.12 | 73.98 | [Download]() |
@@ -44,8 +49,8 @@ Please, cite the following paper if you use the resources below:
 Vectors used as features for subtask A (together with all other features):
 training on train2016-part1, testing on test2016:
 
-| Size  |  Window  |  Freq  |  Skip | MAP | Acc | - |
-| --- | --- | --- |  --- | --- | --- |
+| Size  |  Window  |  Freq  |  Skip | MAP | Acc | Word embeddings |
+| --- | --- | --- |  --- | --- | --- | --- |
 | 200 |   5 |   1 |   3  |  **78.21** | 74.25 | [Download]() |
 | 200 |   5 |   5 |   1 | 78.19 | 73.49 | [Download]() |
 | 200 |   5 |   5 |   3 | 78.13 | 74.01 | [Download]() |
