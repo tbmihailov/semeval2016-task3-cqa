@@ -55,7 +55,7 @@ training on train2016-part1, testing on test2016:
 | 200 |   5 |   5 |   1 | 78.19 | 73.49 | [Download]() |
 | 200 |   5 |   5 |   3 | 78.13 | 74.01 | [Download]() |
 | 200 |   5 |   1 |   1 | 78.01  |  74.53 | [Download]() |
-| 100 |   5 |   1 |   1 | 77.93 | 74.19 | [Download]() |
+| 100 |   5 |   1 |   1 | 77.93 | 74.19 | [Download]() - best performing for Subtask C with ablated features(see table below)|
 | 200 |   10 |   5 |   1 | 77.90 | 73.88 | [Download]() |
 | 100 |   5 |   1 |   3 | 77.81 | 73.94 | [Download]() |
 | 100 |   10 |   1 |   1 | 77.72 | 74.43 | [Download]() |
@@ -65,5 +65,30 @@ training on train2016-part1, testing on test2016:
 | 100 |   10 |   10 |   1 | 77.18 | 73.79 | [Download]() |
 | 100 |   10 |   5 |   1 | 77.08  |  **74.53** | [Download]() |
 
+
+*Table: Subtask C. Using all features without some feature groups.* Word2Vec is trained on QL with word vector size 100, context window 5, minimum word frequency 1, and skip-grams 1 [Download](), Classifier is trained on Train2016-part1 and evaluated on Test-2016:
+
+| Features | MAP | Accuracy |
+| --- | --- | --- |
+| All  -  Q to C sim              | **53.39** | 69.87 |
+| All  -  Meta categories         | 53.06 | 69.81 |
+| All  -  WC sim and Meta cat      | 52.91 | 69.54 |
+| All  -  WC sim and LDA sim       | 52.84 | 70.06 |
+| All  -  Meta cat and LDA sim         | 52.83 | 69.87 |
+| All  -  Ext POS sim and WC sim   | 52.82 | 70.21 |
+| All                             | 52.78 | 69.43 |
+| All  -  Aligned similarity      | 52.76 | 70.10 |
+| All  -  Word Clusters similarity | 52.58 | 69.63 |
+| All  -  Maximized similarity    | 52.47 | 69.27 |
+| All  -  Cat and WC and LDA sim | 52.44 | 69.51 |
+| All  -  Ext POS sim             | 52.23 | 69.91 |
+| All  -  LDA sim                 | 52.08 | 69.97 |
+| All  -  POS sim                 | 51.57 | 69.96 |
+| All  -  Word Vectors            | 49.57 | 70.13 |
+| All  -  Metadata full           | 46.03 | **71.06** |
+| Primary | 51.68 | 69.94 |
+| Contrastive 1  | 51.46 | 69.69 |
+| Contrastive 2 | 48.76 | 69.71 |
+| Baseline (IR) | 28.88 | -- |
 
 
