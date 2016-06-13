@@ -128,10 +128,10 @@ word2vec_model_file='qatarliving_qc_size200_win5_mincnt1_rpl_skip3_phrFalse_2016
 model = Word2Vec.load_word2vec_format(word2vec_model_file, binary=False) # binary should be False
 
 #evaluate
-model.most_similar(positive=['woman', 'king'], negative=['man'], topn=1)
+print model.most_similar(positive=['woman', 'king'], negative=['man'], topn=1)
 
 #get embedding for word
-model['qatar']
+print model['qatar']
 
 ```
 For more examples of using the loaded model, please see the Gensim Word2Vec tutorial by Radim Rehurek [here](http://rare-technologies.com/word2vec-tutorial/).
