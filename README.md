@@ -122,10 +122,10 @@ Word2Vec is trained with word vector size 200, context window 5, minimum word fr
 The emebeddings published here can be used using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) word2vec implementation.
 
 ```python
-word2vec_model_file=qatarliving_qc_size200_win5_mincnt1_rpl_skip3_phrFalse_2016_02_25.word2vec.bin # put here the .bin file from the downloaded zip file
+word2vec_model_file='qatarliving_qc_size200_win5_mincnt1_rpl_skip3_phrFalse_2016_02_25.word2vec.bin' # put here the .bin file from the downloaded zip file
 
 #load the model
-model = Word2Vec.load_word2vec_format('/tmp/vectors.txt', binary=False) # binary should be False
+model = Word2Vec.load_word2vec_format(word2vec_model_file, binary=False) # binary should be False
 
 #evaluate
 model.most_similar(positive=['woman', 'king'], negative=['man'], topn=1)
