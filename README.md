@@ -18,7 +18,7 @@ Please, cite the following paper if you use the resources below:
 @InProceedings{mihaylov-nakov:2016:SemEval,
   author    = {Mihaylov, Todor  and  Nakov, Preslav },
   title     = {SemanticZ at SemEval-2016 Task 3: Ranking Relevant Answers in Community Question Answering Using Semantic Similarity Based on Fine-tuned Word Embeddings},
-  booktitle = {Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2015)},
+  booktitle = {Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2016)},
   month     = {June},
   year      = {2016},
   address   = {San Diego, California},
