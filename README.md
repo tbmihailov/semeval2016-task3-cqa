@@ -117,3 +117,24 @@ Word2Vec is trained with word vector size 200, context window 5, minimum word fr
 | Contrastive 2                      | 75.41 | 72.26 |
 | Baseline (IR)  | 59.53 | --  |
 
+
+##How to use the embeddings
+The emebeddings published here can be used using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) word2vec implementation.
+
+```python
+word2vec_model_file=qatarliving_qc_size200_win5_mincnt1_rpl_skip3_phrFalse_2016_02_25.word2vec.bin # put here the .bin file from the downloaded zip file
+
+#load the model
+model = Word2Vec.load_word2vec_format('/tmp/vectors.txt', binary=False) # binary should be False
+
+#evaluate
+model.most_similar(positive=['woman', 'king'], negative=['man'], topn=1)
+
+#get embedding for word
+model['qatar']
+
+```
+For more examples of using the loaded model, please see the Gensim Word2Vec tutorial by Radim Rehurek [here](http://rare-technologies.com/word2vec-tutorial/).
+
+##Questions and issues with the embeddings
+If you have any questions or problems with the embeddings, please open an issue or send an e-mail to tbmihailov [at] gmail!
