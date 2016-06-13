@@ -32,16 +32,16 @@ Please, cite the following paper if you use the resources below:
 
 | Vector size | MAP | Accuracy | Word embeddings |
 | --- | --- | --- | --- |
-| 800 | **78.45** | 74.22 | [Download]() | 
-| 700 | 78.12 | 73.98 | [Download]() |
-| 600 | 77.31 | 73.15 | [Download]() |
-| 500 | 77.61 | 73.30 | [Download]() |
-| 400 | 78.36 | 74.19 | [Download]() |
-| 300 | 77.25 | 74.50 | [Download]() |
-| 200 | 77.90 | 73.88 | [Download]() |
-| 100 | 77.08 | **74.53** | [Download]() |
-| 50 | 77.22 | 73.85 | [Download]() |
-| 20 | 75.44 | 72.42 | [Download]() |
+| 800 | **78.45** | 74.22 | [Download](https://www.amazon.com/clouddrive/share/1EB78q7aMEALf4x0OCSG9qhJttOCdwts9jJWu173Ilu) | 
+| 700 | 78.12 | 73.98 | [Download](https://www.amazon.com/clouddrive/share/aHmE1GukQrOpP6xDbtglo5bmBs3F7EqSSYvVTBMosWr) |
+| 600 | 77.31 | 73.15 | [Download](https://www.amazon.com/clouddrive/share/M03CdHKAOLiTFV1Zvgf6HG6dVI4EGGILqLSlOgd8SJK) |
+| 500 | 77.61 | 73.30 | [Download](https://www.amazon.com/clouddrive/share/s0R7cokzecUfGy35uPoJO0tMvaiLqwsQ2eN7dU2H3XS) |
+| 400 | 78.36 | 74.19 | - |
+| 300 | 77.25 | 74.50 | [Download](https://www.amazon.com/clouddrive/share/ifW3RP6ahKmKQkVazv3DlnLLKT06FZLFS2LlAY6WK36) |
+| 200 | 77.90 | 73.88 | [Download](https://www.amazon.com/clouddrive/share/7qBwXmkX0zRoAtdnlNE9nqLipqo5AotHdnUHovD5opW) |
+| 100 | 77.08 | **74.53** | [Download](https://www.amazon.com/clouddrive/share/kF8IOxppcWusScsfY7lE0R1g0GfU2C7teSKDiDZXGym) |
+| 50 | 77.22 | 73.85 | - |
+| 20 | 75.44 | 72.42 | [Download](https://www.amazon.com/clouddrive/share/H7YTNXMkNCP0TH5tMWrYIygIBGwCRPPTLeEMS4QaHwX) |
 | Baseline | 59.53 | - | 
 
 
@@ -51,22 +51,22 @@ training on train2016-part1, testing on test2016:
 
 | Size  |  Window  |  Freq  |  Skip | MAP | Acc | Word embeddings |
 | --- | --- | --- |  --- | --- | --- | --- |
-| 200 |   5 |   1 |   3  |  **78.21** | 74.25 | [Download]()  - best performing for Subtask A with ablated features(see table below)|
-| 200 |   5 |   5 |   1 | 78.19 | 73.49 | [Download]() |
-| 200 |   5 |   5 |   3 | 78.13 | 74.01 | [Download]() |
-| 200 |   5 |   1 |   1 | 78.01  |  74.53 | [Download]() |
-| 100 |   5 |   1 |   1 | 77.93 | 74.19 | [Download]() - best performing for Subtask C with ablated features(see table below)|
-| 200 |   10 |   5 |   1 | 77.90 | 73.88 | [Download]() |
-| 100 |   5 |   1 |   3 | 77.81 | 73.94 | [Download]() |
-| 100 |   10 |   1 |   1 | 77.72 | 74.43 | [Download]() |
-| 200 |   10 |   1 |   1 | 77.58 | 74.25 | [Download]() |
-| 100 |   5 |   5 |   1 | 77.53 | 74.07 | [Download]() |
-| 200 |   10 |   1 |   3 | 77.43 | 73.73 | [Download]() |
-| 100 |   10 |   10 |   1 | 77.18 | 73.79 | [Download]() |
-| 100 |   10 |   5 |   1 | 77.08  |  **74.53** | [Download]() |
+| 200 |   5 |   1 |   3  |  **78.21** | 74.25 | [Download](https://www.amazon.com/clouddrive/share/QSa5PwTTPG97rEUdrUfRwDGl1Vj7YhcFUIj2s0j0RY3)  - best performing for Subtask A with ablated features(see table below)|
+| 200 |   5 |   5 |   1 | 78.19 | 73.49 | [Download](https://www.amazon.com/clouddrive/share/7gnbjmbf8jsGbz7nLdGA2TRvIpoiQuJAk4yNM6h4xRl) |
+| 200 |   5 |   5 |   3 | 78.13 | 74.01 | [Download](https://www.amazon.com/clouddrive/share/QTxFpXYTYqGSEJIYadNXsmb0YcPIRrJakmndkzsemwH) |
+| 200 |   5 |   1 |   1 | 78.01  |  74.53 | [Download](https://www.amazon.com/clouddrive/share/7DqnkQ8b2NZovFmuXwX0ylW8iAf4vbGg13nLJlV4b2V) |
+| 100 |   5 |   1 |   1 | 77.93 | 74.19 | [Download](https://www.amazon.com/clouddrive/share/oFqMjFXfc0Mt8YvmVDWPIjoLVqQ2vAli9w68Q7f4k6y) - best performing for Subtask C with ablated features(see table below)|
+| 200 |   10 |   5 |   1 | 77.90 | 73.88 | [Download](https://www.amazon.com/clouddrive/share/7qBwXmkX0zRoAtdnlNE9nqLipqo5AotHdnUHovD5opW) |
+| 100 |   5 |   1 |   3 | 77.81 | 73.94 | [Download](https://www.amazon.com/clouddrive/share/IznHeZ7X42XVNQM6SwSDSK4c9b2rFq8xje2fESFTkt2) |
+| 100 |   10 |   1 |   1 | 77.72 | 74.43 | [Download](https://www.amazon.com/clouddrive/share/dCg6GXVlAJN0Dx6soo7Fv3nebV88f1zdNp4k3iXPYHT) |
+| 200 |   10 |   1 |   1 | 77.58 | 74.25 | [Download](https://www.amazon.com/clouddrive/share/WAsDY6PqTl0LaOUil3mNWKI4d2IJ109XeIRLQvbTbrw) |
+| 100 |   5 |   5 |   1 | 77.53 | 74.07 | [Download](https://www.amazon.com/clouddrive/share/EKebZOiuuJpadx23pEKUqyF0MbEBz1TPhjd65rkQ0VO) |
+| 200 |   10 |   1 |   3 | 77.43 | 73.73 | [Download](https://www.amazon.com/clouddrive/share/tS7Q8ab9Bte3vjQRLzH88CNanBA7tlptlo4bywmyKTQ) |
+| 100 |   10 |   10 |   1 | 77.18 | 73.79 | - |
+| 100 |   10 |   5 |   1 | 77.08  |  **74.53** | [Download](https://www.amazon.com/clouddrive/share/kF8IOxppcWusScsfY7lE0R1g0GfU2C7teSKDiDZXGym) |
 
 
-**Table: Subtask C. Using all features without some feature groups.** Word2Vec is trained on QL with word vector size 100, context window 5, minimum word frequency 1, and skip-grams 1 [Download](), Classifier is trained on Train2016-part1 and evaluated on Test-2016:
+**Table: Subtask C. Using all features without some feature groups.** Word2Vec is trained on QL with word vector size 100, context window 5, minimum word frequency 1, and skip-grams 1 ([Download](https://www.amazon.com/clouddrive/share/oFqMjFXfc0Mt8YvmVDWPIjoLVqQ2vAli9w68Q7f4k6y)), Classifier is trained on Train2016-part1 and evaluated on Test-2016:
 
 | Features | MAP | Accuracy |
 | --- | --- | --- |
@@ -92,7 +92,7 @@ training on train2016-part1, testing on test2016:
 | Baseline (IR) | 28.88 | -- |
 
 **Table:Subtask A. Using all features without some feature groups.**
-Word2Vec is trained with word vector size 200, context window 5, minimum word frequency 1, and skip-grams 3([Download]()). Classifier is trained on Train2016-part1 and evaluated on Test-2016:
+Word2Vec is trained with word vector size 200, context window 5, minimum word frequency 1, and skip-grams 3([Download](https://www.amazon.com/clouddrive/share/QSa5PwTTPG97rEUdrUfRwDGl1Vj7YhcFUIj2s0j0RY3)). Classifier is trained on Train2016-part1 and evaluated on Test-2016:
 
 | Features | MAP  | Accuracy |
 | --- | --- | --- |
