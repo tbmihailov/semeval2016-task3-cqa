@@ -23,7 +23,7 @@ Please, cite the following paper if you use the resources below:
   year      = {2016},
   address   = {San Diego, California},
   publisher = {Association for Computational Linguistics},
-  pages     = {00 - 00},
+  pages     = {804 - 811},
   url       = {http://www.aclweb.org/anthology/S16}
 }
 ```
