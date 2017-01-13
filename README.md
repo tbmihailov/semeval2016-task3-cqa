@@ -125,7 +125,7 @@ The emebeddings published here can be used using [gensim](https://radimrehurek.c
 word2vec_model_file='qatarliving_qc_size200_win5_mincnt1_rpl_skip3_phrFalse_2016_02_25.word2vec.bin' # put here the .bin file from the downloaded zip file
 
 #load the model
-model = Word2Vec.load_word2vec_format(word2vec_model_file, binary=False) # binary should be False
+model = Word2Vec.load(word2vec_model_file)
 
 #evaluate
 print model.most_similar(positive=['woman', 'king'], negative=['man'], topn=1)
